@@ -65,8 +65,8 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ env.tag }}
-          name: N_m3u8DL-RE_${{ env.tag }}
-          artifacts: "android-bionic-x64/*,android-bionic-arm64/*,linux-x64/*,linux-arm64/*,linux-musl-x64/*,linux-musl-arm64/*,osx-x64/*,osx-arm64/*,win-x64/*,win-arm64/*,win-NT6.0-x86/*"
+          name: Release_${{ env.tag }}
+          artifacts: "build-bin/*,win-x64/*,win-arm64/*,win-NT6.0-x86/*"
           draft: false
           allowUpdates: true
           generateReleaseNotes: true
