@@ -46,6 +46,8 @@ jobs:
         uses: softprops/action-gh-release@v2
         #if: startsWith(github.ref, 'refs/tags/')
         with:
+          name: Release ${{ github.sha }}
+          tag_name: ${{ env.tag }}
           files: build-bin/**
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
