@@ -1,11 +1,11 @@
 name: Build Jrebel Server
 
-on:
-  push:
-    branches:
-      - master
-    tags:
-      - '*'
+on: push
+  #push:
+  #  branches:
+  #    - master
+  #  tags:
+  #    - '*'
 
 jobs:
   build-job:
