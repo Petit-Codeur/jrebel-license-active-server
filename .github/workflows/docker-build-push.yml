@@ -2,10 +2,10 @@ name: Build Jrebel Server Docker Image
 
 on:
   push:
-    branches:
-      - master
     tags:
-      - 'v*'
+      - "v*.*.*"
+    #branches:
+    #  - master
 
 jobs:
   build-docker-image:
